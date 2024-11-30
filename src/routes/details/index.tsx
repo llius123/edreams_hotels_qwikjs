@@ -1,8 +1,16 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { useNavigate, type DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
-  return <div class="flex h-full basis-full flex-row">Details</div>;
+  const nav = useNavigate();
+  return (
+    <div class="flex h-full basis-full flex-row">
+      <button class="btn btn-secondary " onClick$={() => nav("/results")}>
+        Go to Results
+      </button>
+      Details
+    </div>
+  );
 });
 
 export const head: DocumentHead = {
