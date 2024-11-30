@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import GoogleMap from "~/components/google-map/GoogleMap";
+import HotelCard from "~/components/hotel-card/HotelCard";
 import SearchCity from "~/components/search-city/SearchCity";
 
 export default component$(() => {
@@ -10,7 +11,11 @@ export default component$(() => {
         <SearchCity />
         <GoogleMap />
       </div>
-      <div class="basis-3/4 border border-red-400">center pannel</div>
+      <div class="flex basis-3/4 flex-col gap-3 border border-red-400 ">
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+      </div>
     </div>
   );
 });
