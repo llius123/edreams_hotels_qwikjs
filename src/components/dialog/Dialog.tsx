@@ -25,8 +25,8 @@ const Dialog = component$(() => {
 
   return (
     <>
-      <button class="btn" onClick$={openModal}>
-        open modal
+      <button class="btn btn-primary" onClick$={openModal}>
+        Login
       </button>
       <dialog ref={dialog} class="modal">
         <div class="modal-box flex flex-col">
