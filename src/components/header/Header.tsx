@@ -1,10 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import Dialog from "../dialog/Dialog";
 
-export default component$(() => {
+const Header = component$(() => {
   return (
     <>
       <Dialog />
     </>
   );
 });
+export default Header;
